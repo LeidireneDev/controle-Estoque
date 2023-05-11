@@ -4,6 +4,7 @@ import { useState, Fragment } from "react";
 import {
   ChartPieIcon,
   ClipboardDocumentCheckIcon,
+  ClipboardDocumentListIcon,
   FolderIcon,
   HomeIcon,
   InboxStackIcon,
@@ -32,7 +33,7 @@ const navigation = [
     id: 3,
     name: "Relatórios",
     href: "/estoque/relatorios",
-    icon: ClipboardDocumentCheckIcon,
+    icon: ClipboardDocumentListIcon,
     current: false,
   },
 ];
@@ -63,7 +64,7 @@ export default function Estoque({ children }) {
                   {({ open }) => (
                     <>
                       <div className="relative mt-2">
-                        <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                        <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-400 sm:text-sm sm:leading-6">
                           <span className="block truncate">
                             {selected.name}
                           </span>
@@ -88,7 +89,7 @@ export default function Estoque({ children }) {
                                 className={({ active }) =>
                                   classNames(
                                     active
-                                      ? "bg-indigo-600 text-white"
+                                      ? "bg-amber-500 text-white"
                                       : "text-gray-900",
                                     "relative cursor-default select-none py-2 pl-3 pr-9"
                                   )
@@ -112,7 +113,7 @@ export default function Estoque({ children }) {
                                         className={classNames(
                                           active
                                             ? "text-white"
-                                            : "text-indigo-600",
+                                            : "text-amber-500",
                                           "absolute inset-y-0 right-0 flex items-center pr-4"
                                         )}
                                       >

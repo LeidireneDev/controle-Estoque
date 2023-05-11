@@ -45,7 +45,7 @@ export default async function EditarProduto({ params, searchParams }) {
                     id="nome"
                     required
                     defaultValue={dados?.nome}
-                    className={`block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6${
+                    className={`block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-400 sm:text-sm sm:leading-6${
                       erros.nome ? " border-red-600" : ""
                     }`}
                   />
@@ -68,7 +68,7 @@ export default async function EditarProduto({ params, searchParams }) {
                     type="text"
                     rows="3"
                     defaultValue={dados?.descricao}
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-400 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -85,7 +85,7 @@ export default async function EditarProduto({ params, searchParams }) {
                     name="fornecedor"
                     id="fornecedor"
                     defaultValue={dados?.fornecedor}
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-400 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default async function EditarProduto({ params, searchParams }) {
                     defaultValue={dados?.quantidade}
                     required
                     min="0"
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-400 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default async function EditarProduto({ params, searchParams }) {
               </Link>
               <button
                 type="submit"
-                className="px-3 py-2 text-sm font-semibold text-white bg-indigo-600 rounded-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="px-3 py-2 text-sm font-semibold text-white bg-amber-400 rounded-md shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-400"
               >
                 Salvar
               </button>
